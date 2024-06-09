@@ -1,0 +1,843 @@
+@import 'utility.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.Liabilities{
+    background-image: url('background.avif');
+    background-size: cover;
+}
+
+
+.Incentives{
+    background-image: url('background.avif');
+}
+
+.Login{
+    background-image: url('background.avif');
+}
+
+.Contact{
+    background-image: url('background.avif');
+}
+/* Style for the bullet */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+    background-color: palevioletred; 
+    overflow-x: hidden; 
+}
+
+.bullet {
+    position: fixed;
+    z-index: -1; 
+    color: yellow; 
+    font-size: 20px;
+}
+
+/*  Header and navigator */
+.head{
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 50px;
+}
+
+.main a{
+    text-decoration: none;
+}
+
+.main{
+    max-width: 1024px;
+    padding : 0 15px;
+}
+header nav .head a{
+    margin-right: 2rem;
+}
+
+.click{
+    margin-right: 0;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.click a:hover{
+    color: cornflowerblue;
+
+}
+
+.click a{
+    color:red;
+    margin:2rem;
+}
+
+
+header nav .contact .click{
+    margin-right: 2rem;
+    margin-left: 500px;
+    border-radius: 25px;
+}
+
+.sign{
+    margin-left: 2px;
+    color: aliceblue;
+    text-align: left;
+    flex-direction: column;
+}
+
+
+.sign a{
+    color: yellowgreen;
+}
+
+.sign p{
+    margin: 0;
+}
+
+.login{
+    font-family: 'Good Times Rg', sans-serif;
+    margin-left: 120px;
+}
+
+section.About :hover{
+    transition: all .3s ease;
+}
+
+header .main nav .head a:hover{
+    color : var(--primary);
+  }
+
+header nav .head a{
+    color:aliceblue;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(93, 41, 93); 
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.contact a{
+    color:rgb(140, 159, 36);
+}
+
+.click{
+    background-color: chocolate;
+}
+
+.click a{
+    color:rgb(218, 230, 0);
+    border: none;
+}
+
+.click a:hover{
+    color:antiquewhite;
+}
+
+
+/* About Us*/
+
+.About{
+    background-image: url('background.avif');
+}
+
+.heads{
+    margin-left:100px;
+    margin-right: 120px;
+    border: 0 solid;
+    padding: 14px;
+    background-color: antiquewhite;
+}
+
+.heads h1{
+    text-align:center;
+    margin-bottom:20px;
+    font-size: 50px;
+}
+
+.heads p{
+    font-size:25px;
+    letter-spacing: normal;
+    font-weight:500;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* logo and title*/
+
+.intro{
+    background-image: url('background.avif');
+}
+
+
+.text{
+    margin-right: 200px;
+    margin-bottom: 50px;
+}
+
+.logo{
+    margin-bottom: 500px;
+    margin-top: 200px;
+    width:300px;
+    height:300px;
+    margin-left:25px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.text{
+    font-size: 65px;
+}
+
+.text .teext{
+    margin-top: 25px;
+}
+
+.text .ilo{
+   font-family: cursive;
+   color: rgb(77, 77, 54);
+}
+
+.text .ilp{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(45, 81, 81);
+}
+
+.text .ilq{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(36, 59, 51);
+}
+
+.logo img{
+    width: 1000px;
+}
+
+/* Rewards */
+.rewards{
+    margin-bottom: 50px;
+}
+
+.wrapper{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card{
+    width: 100px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow:hidden;
+    border-radius: 2rem;
+    margin:0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28, -0.03,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color:white;
+    display: flex;
+    flex-wrap: normal;
+}
+
+.card > .row > .icon{
+    background: #764077;
+    color: bisque;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px; 
+}
+
+.card>.row>.description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity:0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description h4{
+    text-transform: uppercase;
+    color: rgb(3, 106, 3);
+    font-weight: 900;
+}
+
+input{
+    display: none;
+}
+
+input:checked +label{
+    width: 600px;
+}
+
+input:checked + label .description{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for = "c1"] {
+    background-image: url('Goodies from wiss.png');
+}
+.card[for = "c2"] {
+    background-image: url('IMG_3455.jpeg');
+}
+.card[for = "c3"] {
+    background-image: url('Star\ night\ pass.jpeg');
+}
+.card[for = "c4"] {
+    background-image: url('free_participation.jpeg');
+}
+.card[for = "c5"] {
+    background-image: url('Get\ certified.jpeg');
+}
+.card[for = "c6"] {
+    background-image: url('coupons.jpg');
+}
+
+.card[for="c1"],
+.card[for="c2"],
+.card[for="c3"],
+.card[for="c4"],
+.card[for="c5"],
+.card[for="c6"] {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Incentives .pdf{
+    font-size: 20px;
+    color: rgb(126, 224, 14);
+}
+
+.Incentives .pdf span a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: larger;
+    color: aliceblue;
+}
+
+
+/* Testimonials */
+
+section.Incentives{
+    background-color: #8a3e8b;
+}
+
+.man .span{
+    margin-left:500px;
+    color: aquamarine;
+}
+
+.man{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+section.Incentives h1{
+    text-align: center;
+    color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.man p{
+   margin-top: 20px;
+   color: rgb(17, 220, 227);
+}
+
+.man img{
+    border-radius: 100%;
+    object-fit: cover;
+    margin-left: 680px;
+    margin-top: 30px;
+}
+
+section.Incentives .slider-dots .dots{
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+section.Incentives .slider-dots button{
+    font-size: 0;
+    width: 8px;
+    height: 5px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background: var(silver);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+section.Incentives .dots li.slick-active button{
+    background-color: aqua;
+    width:20px;
+}
+
+
+
+/* login page creation */
+
+fieldset.box{
+    background-color: aliceblue;
+}
+
+.box h1{
+    text-align: center;
+}
+
+.loginpg{
+    align-items: center;
+}
+
+.loginpg fieldset.box{
+    margin-right:100px;
+    margin-left: 550px;
+}
+
+fieldset.box{
+    border: 0.5px solid black;
+    border-radius: 10px; 
+    padding: 10px;
+    width: 300px;
+    margin-left: 485px;
+}
+
+.uname{
+    padding-top: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.passd{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.loginpg img{
+    width: 20px;
+    padding-top: 30px;
+    color: grey;
+    padding-bottom: 2rem; 
+}
+
+.loginpg .pass{
+    width: 16px;
+    padding-top: 30px;
+    color: grey;
+}
+
+.login_input{
+    font-size: 14px;
+    
+    font-family: ui-rounded;
+    font-weight: bolder;
+    padding-left: 0;
+    margin-left: 0;
+    color: grey;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 12px;
+    padding-bottom: 2px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 200px;
+    margin-left: 1rem;
+    margin-right: 5rem;
+}
+
+.loginpg a{
+    font-size: 11px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.loginpg p{
+    margin-left: 10rem;
+    font-weight: lighter;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    padding-bottom: 2rem;
+}
+
+button.log{
+    width: 270px;
+    border-radius:25px;
+}
+
+.loginpg .alt{
+    color: black;
+    padding-top: 30px;
+    font-size: 11px;
+    margin-left:95px;
+    padding-bottom: 5px;
+}
+
+.loginpg .fb{
+    margin-bottom: 3rem;
+    width: 50px;
+    margin-left: 70px;
+}
+
+.loginpg .x{
+    margin-bottom: 3rem;
+    width: 50px;
+}
+
+.loginpg .google{
+    margin-bottom: 3rem;
+    width: 50px;
+}
+
+.loginpg .sign1{ 
+    padding:120px;
+}
+
+.checkbox-label{
+    font-family: cursive;
+    color: rgb(69, 68, 68);
+    font-size: 17px;
+    padding-left: 3px;
+}
+
+/* Liabilities */
+
+
+
+section.liabilities h1{
+    text-align: center;
+    background-color: #8a3e8b;
+}
+
+.img1{
+    border: 0.5px solid;
+    border-radius:15px;
+    text-align: center;
+    margin-left:300px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: darkorchid;
+}
+
+.img1 img{
+    width: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top:40px;
+    margin-bottom:5px;
+}
+
+.img2{
+    border: 0.5px solid;
+    border-radius:15px;
+    text-align: center;
+    margin-left:300px;
+    margin-bottom: 100px;
+    background-color: darkorchid;
+} 
+
+.img2 img{
+    width: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top:40px;
+    margin-bottom:5px;
+}
+
+.img3{
+    border: 0.5px solid;
+    border-radius:15px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-right:300px;
+    background-color: darkorchid;
+}
+
+.img4 img{
+    width: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top:40px;
+    margin-bottom:5px;
+}
+
+.img4{
+    border: 0.5px solid;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom:100px;
+    margin-right: 300px;
+    background-color: darkorchid;
+}
+
+.img3 img{
+    width: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top:40px;
+    margin-bottom:5px;
+}
+
+section.Liabilities h1{
+    text-align:center;
+}
+
+section.Liabilities h3{
+    margin-bottom: 10px;
+
+}
+
+/* Contact */
+
+.input-name,
+.input-mail,
+.input-phno,
+.input-mssg {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.con{
+    text-align: center;
+    padding-top: 60px;
+}
+
+.con fieldset.reg{
+    border:2px solid blanchedalmond ;
+    margin-right:500px;
+    margin-left:500px;
+    margin-top: 1rem;
+    margin-bottom:3rem;
+    border-radius: 10px;
+    background-color: plum;
+    align-items: center;
+}
+
+.name{
+    margin-bottom: -5px;
+    margin-right: -10px;
+    margin-top:20px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 50px;
+}
+
+.mail{
+    margin-bottom: -5px;
+    margin-right: -10px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 50px;
+}
+
+
+.phno{
+    margin-bottom: -5px;
+    margin-right: -10px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 50px;
+}
+
+
+.mssg{
+    margin-bottom: -5px;
+    margin-right: -10px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+}
+
+
+.con button{
+    margin-left:-25px;
+    margin-bottom: 10px;
+    padding:10px 70px;
+    background-color: black;
+    color:beige;
+    border-radius: 15px;
+}
+
+.con button:hover {
+    background-color: bisque;
+    color: black;
+    border-color: lightskyblue;
+} 
+
+/* Rewards and Incentives*/
+
+section.Incentives h1{
+    text-align: center;
+}
+
+section.Incentives p{
+    text-align: center;
+}
+
+section.Incentives a{
+    text-align: center;
+}
+
+.more{
+    text-align: center;
+}
+
+
+
+.social{
+    margin-left: 670px;
+}
+
+.social img{
+    margin-right: 10px;
+    border: 2px solid brown;
+    padding:1px;
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    width: 20px; 
+    transition: all 0.3s ease; 
+    border: 2px solid transparent;
+    border-radius: 5px; 
+}
+
+
+.social-icon:hover {
+    border-color: #007bff;
+}
+
+
+.social-icon:hover {
+    content: attr(data-alt-src); 
+}
+
+.more{
+    background-color: #FFB6C1;
+}
+
+.more a{
+    text-decoration: none;
+    font-family: sans-serif;
+} 
+
+
+/* Mobile Navigation*/
+
+@media(max-width: 1320px){
+    header #main-nav{
+        display:none;
+    }
+}
+
+.site-main-wrapper{
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
